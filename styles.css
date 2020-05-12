@@ -373,16 +373,11 @@ header li{
   }
 
 footer{
+    height: 100%;
     position: sticky;
     color: rgba(255, 255, 255, 0.5);
     text-align: right;
-    font-size: 10px;
+    font-size: 15px;
     padding: 10px 20px;
     background-color: black;
-}
-
-@media screen and (max-width: 620px) {
-    .informations{
-        height: auto;
-    }
 }
