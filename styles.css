@@ -1,0 +1,388 @@
+
+
+body{
+    background-color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    background-image: url("img/arbre.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    padding-top: 60px;
+    height: 400px;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    left: 500px;
+    height: 150px;
+    width: 325px;
+}
+
+
+header a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.droite{
+    position: relative;
+    text-align: right;
+    bottom: 40px;
+}
+
+.droite a{
+    color: black;
+    padding: 5px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.bienvenue{
+    color: rgb(68, 68, 190);
+    position: relative;
+    top: 100px;
+    right: 10px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border: 7px solid rgb(68, 68, 190);
+    border-radius: 100px;
+    font-size: 70px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.contact{
+    color: rgb(68, 68, 190);
+    position: relative;
+    top: 100px;
+    right: 10px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border: 7px solid rgb(68, 68, 190);
+    border-radius: 100px;
+    font-size: 70px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Great Vibes', cursive;
+}
+
+@media screen and (max-width: 1300px) {
+    .droite{
+    position: relative;
+    text-align: left;
+    bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .bienvenue{
+        top: 0px;
+        right: -5px;
+    }
+    .contact{
+        top: 0px;
+        right: -5px;
+    }
+    .logo{
+        position: relative;
+        display: block;
+        left: initial;
+        top: initial;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    header{
+        background-size: 125%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        background-size: 150%;
+    }
+}
+
+/* DRAPEAUX */
+
+.drapeaux{
+    margin: 10px;
+    width: 200px;
+    border: 5px solid black;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .drapeaux{
+        top: 54px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .drapeaux{
+        width: 130px;
+    }
+}
+
+/* CHAMBRES */
+
+.chambres{
+    background-color: rgb(241, 239, 103);
+    color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chambres figure{
+    text-align: center;
+    margin: auto;
+    width: 250px;
+}
+
+.chambres figure img{
+    border-radius: 50%;
+    width: 225px;
+    box-shadow: rgb(0, 0, 0, 0.5) 2.5px 2.5px 2.5px;
+}
+
+.chambres figure img:hover{
+    transform: scale(1.03,1.03);
+}
+
+.chambres figcaption{
+    font-weight: bold;
+    font-size: 20px;
+    display: inline;
+    color: rgb(104, 104, 104);
+}
+
+.chambres figcaption:hover{
+    color: rgb(168, 168, 168);
+}
+
+/* INFORMATIONS */
+
+.informations{
+    height: 500px;
+    position: relative;
+    font-size: 16px;
+    background-color: rgb(87, 180, 92);
+}
+
+.informations h2{
+    text-decoration: underline;
+    position: relative;
+    top: 10px;
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 620px) {
+    .informations h2{
+        top: -5px;
+    }
+}
+
+.informations p{
+    position: relative;
+    top: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+    background-clip: content-box;
+    color: black;
+    margin-left: 50px;
+    line-height: 50px;
+    max-width: 600px;
+    text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+    .informations p{
+        left: -25px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .informations p{
+        top: -20px;
+    }
+}
+
+.informations img{
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 320px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+    .informations img{
+    width: 300px;
+    top: 20px;
+    right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 995px) {
+    .informations img{
+    width: 200px;
+    top: 115px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .informations img{
+        display: none;
+    }
+
+}
+
+/* CONTACTER */
+
+.contacter{
+    height: 500px;
+    position: relative;
+    font-size: 16px;
+    background-color: rgb(87, 180, 92);
+}
+.contacter h2{
+    position: absolute;
+    top: 2.5%;
+    left: 4%;
+    color: black;
+    text-decoration: underline;
+}
+
+.contacter h3{
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    color: white;
+}
+
+
+.numéros{
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+    background-clip: content-box;
+    color: black;
+    line-height: 40px;
+    max-width: 600px;
+    text-align: left;
+}
+
+/* .contacter img{
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 320px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+} */
+/* 
+@media screen and (max-width: 1100px) {
+    .contacter img{
+    width: 300px;
+    top: 20px;
+    right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 995px) {
+    .contacter img{
+    width: 200px;
+    top: 115px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .contacter img{
+        display: none;
+    }
+
+} */
+
+.prix, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+
+.prix{
+    color: black;
+    background-color: white;
+    min-width: 50%;
+    min-height: 100px;
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+  }
+
+footer{
+    position: sticky;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    font-size: 10px;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+@media screen and (max-width: 620px) {
+    .informations{
+        height: auto;
+    }
+}
