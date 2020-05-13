@@ -373,6 +373,7 @@ header li{
   }
 
 footer{
+    margin-top: auto;
     height: 100%;
     position: sticky;
     color: rgba(255, 255, 255, 0.5);
