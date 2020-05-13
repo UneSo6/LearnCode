@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: rgb(58, 58, 58);
@@ -169,7 +171,11 @@ header li{
 /* CHAMBRES */
 
 .chambres{
-    background-color: rgb(241, 239, 103);
+    border-top: 20px solid rgb(58, 58, 58);
+    /* border-bottom: 20px solid rgb(58, 58, 58); */
+    position: relative;
+    height: auto;
+    background-color: rgb(240, 240, 100);
     color: grey;
     padding: 20px;
     display: flex;
@@ -207,18 +213,18 @@ header li{
 /* INFORMATIONS */
 
 .informations{
-    height: 500px;
+    height: 400px;
+    border-bottom: 20px solid rgb(58, 58, 58);
     position: relative;
     font-size: 16px;
-    background-color: rgb(87, 180, 92);
+    background-color: rgb(220, 220, 80);
 }
 
 .informations h2{
     text-decoration: underline;
     position: relative;
-    top: 10px;
-    padding-top: 20px;
-    margin-left: 50px;
+    top: 3.5%;
+    left: 4%;
 }
 
 @media screen and (max-width: 620px) {
@@ -228,17 +234,18 @@ header li{
 }
 
 .informations p{
+    height: 80%;
     position: relative;
-    top: 20px;
+    top: 3%;
     border: 3px solid black;
     border-radius: 15px;
-    background-color: white;
+    background-color: rgb(280, 280, 140);
     background-clip: content-box;
     color: black;
-    margin-left: 50px;
-    line-height: 50px;
+    left: 4%;
+    line-height: 40px;
     max-width: 600px;
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (max-width: 680px) {
@@ -252,38 +259,11 @@ header li{
         top: -20px;
     }
 }
-
 .informations img{
+    float: right;
     border: 3px solid black;
     border-radius: 15px;
-    width: 320px;
-    position: absolute;
-    top: 10px;
-    right: 50px;
-}
-
-@media screen and (max-width: 1100px) {
-    .informations img{
-    width: 300px;
-    top: 20px;
-    right: 10px;
-    }
-
-}
-
-@media screen and (max-width: 995px) {
-    .informations img{
-    width: 200px;
-    top: 115px;
-    }
-
-}
-
-@media screen and (max-width: 900px) {
-    .informations img{
-        display: none;
-    }
-
+    height: 80%;
 }
 
 /* CONTACTER */
@@ -292,7 +272,7 @@ header li{
     height: 500px;
     position: relative;
     font-size: 16px;
-    background-color: rgb(87, 180, 92);
+    background-color: rgba(200, 200, 60);
 }
 .contacter h2{
     position: absolute;
@@ -311,13 +291,15 @@ header li{
 
 
 .numéros{
+    font-weight: bold;
+    padding: 10px;
     position: absolute;
     top: 25%;
     left: 4%;
     border: 3px solid black;
     border-radius: 15px;
-    background-color: white;
-    background-clip: content-box;
+    background-color: rgb(280, 280, 140);
+    background-clip: padding-box;
     color: black;
     line-height: 40px;
     max-width: 600px;
@@ -364,7 +346,7 @@ header li{
 
 .prix{
     color: black;
-    background-color: white;
+    background-color: rgb(280, 280, 140);
     min-width: 50%;
     min-height: 100px;
     position: absolute;
